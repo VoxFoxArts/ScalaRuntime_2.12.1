@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+dependencies {
+    compile files('lib/spigot-api-1.11.2-R0.1-SNAPSHOT-shaded.jar')
+}
+
+jar {
+    from "plugin.yml"
+	from "scala"
+    
+    baseName = 'ScalaRuntime'
+    version = '1.0_2.12.1'
+}

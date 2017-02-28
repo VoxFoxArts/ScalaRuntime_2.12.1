@@ -1,0 +1,5 @@
+authors: [VoxFox, Miss___Daisy]
+
+name: ScalaRuntime
+main: main.java.ca.cubiccreations.scalaruntime.ScalaRuntime
+version: 1.0
